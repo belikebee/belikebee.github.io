@@ -1,12 +1,21 @@
-#  chirpy theme 적용기
+---
+title: github blog에 Chirpy theme 적용기
+author: belikebee
+date: 2023-04-25 22:00:00 +0900
+categories: [jekyll, chirpy, github]
+tags: [blog]
+render_with_liquid: false
+---
 
-- 기존 repo fork 후 clone 하여 작업 push 했을때 아래처럼나옴 ㅡㅡ
+- 윈도우11에서 작업하다가 wsl 이슈가 계속 발생하여 mac으로 이동하여 작업진행함
+- 추후 윈도우에서도 테스트 도전..!
+  
+---
+- 기존 repo fork 후 clone 하여 작업 push 했을때 아래처럼나옴 ㅡ.ㅡ
+```
+	-- layout: home # Index page -—
 ```
 
-
--- layout: home # Index page -—
-
-```
 - 위에서 진행한 작업은 다음과 같다.
 
 	- bash tools/init
@@ -56,6 +65,6 @@ cannot load such file -- psych**
 
 
 ---
-해당 블로그 구축에 도움받았던 분들의 글 링크
+해당 블로그 구축에 도움되었던 블로그들의 링크
 https://www.irgroup.org/posts/jekyll-chirpy/
 https://velog.io/@hashnsalt/Github-Blog-%EB%A7%8C%EB%93%A4%EA%B8%B0-2
