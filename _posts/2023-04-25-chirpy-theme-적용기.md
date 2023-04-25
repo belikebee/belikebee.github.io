@@ -2,7 +2,7 @@
 title: github blog에 Chirpy theme 적용기
 author: blb
 date: 2023-04-25 22:00:00 +0900
-categories: [jekyll, github]
+categories: [jekyll, chirpy]
 tags: [blog]
 render_with_liquid: false
 math: true
