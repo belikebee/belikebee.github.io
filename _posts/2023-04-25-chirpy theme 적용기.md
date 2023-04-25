@@ -1,0 +1,54 @@
+#  chirpy theme 적용기
+
+- 기존 repo fork 후 clone 하여 작업 push 했을때 아래처럼나옴 ㅡㅡ
+```
+
+
+-- layout: home # Index page -—
+
+```
+- 위에서 진행한 작업은 다음과 같다.
+
+	- bash tools/init
+	- bundle
+	- jekyll serve —> 실패
+
+  
+## Theme 적용을 향한 끝없는 여정
+#### 1. theme 내 ruby 버전(.github/workflows/pages-deploy.yml.hook)과 mac에 설치된 버전이 다른것 확인 ruby 버전 3.0.2로 업데이트
+- brew install rbenv ruby-build
+- rbenv install 3.0.2	
+- rbenv global 3.0.2
+- rbenv init
+	- 나온 문구 vim ~/.zshrc 아래줄에 추가
+- source ~/.zshrc 로 적용
+
+
+#### 2. 버전 업데이트 후 jekyll serve에서 에러를 뱉길래 bundle 부터 입력했더니 아래와 같은 문구 출력
+**An error occurred while installing eventmachine (1.2.7), and Bundler cannot continue.**
+- gem install ruby_dev 실행
+- Gemfile.lock 에 있는 bundler version설치
+- gem install bundler -v (해당 버전)	
+	**—> 실패**
+- Gemfile.lock 삭제
+- bundle 재실행 실패, 동일한 이슈 발생
+		- 위의 멘트와 다른 이슈가 나와서 되는 줄 알고 살짝 기대
+**—> 실패**
+
+#### 3.  ruby version 3.2.2 로 업데이트 진행
+- 에러 발생
+**..../ruby-3.2.0/lib/yaml.rb:3: warning: It seems your ruby installation is missing psych (for YAML output).
+To eliminate this warning, please install libyaml and reinstall your ruby.
+uh-oh! RDoc had a problem:
+cannot load such file -- psych**
+- libyaml이 설치되어 있지 않아서 발생하는 이슈
+- ruby 3.2.0 이상 버전에서는 libyaml 필요
+—> brew install libyaml 설치
+- ruby 3.2.2 설치완료
+- 업데이트 버전 적용 시 자꾸 이전 버전으로 나와서 헤맸는데
+- 디렉토리 내 .ruby-version에서 버전 교체 필요..
+		- **여러 번 업데이트 하는 경우 침착하게 둘러볼 필요**
+—> bundle 성공...ㅎ
+- bash tools/init 재실행 이후 push 완료
+**—> 테마 적용 성공**
+![f](https://mblogthumb-phinf.pstatic.net/20141113_3/lapapabo_1415855450915PwS0H_PNG/KakaoTalk_20141111_170840098.png?type=w2)
