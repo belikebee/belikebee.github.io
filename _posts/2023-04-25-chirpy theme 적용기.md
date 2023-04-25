@@ -51,4 +51,3 @@ cannot load such file -- psych**
 —> bundle 성공...ㅎ
 - bash tools/init 재실행 이후 push 완료
 **—> 테마 적용 성공**
-![f](https://mblogthumb-phinf.pstatic.net/20141113_3/lapapabo_1415855450915PwS0H_PNG/KakaoTalk_20141111_170840098.png?type=w2)
