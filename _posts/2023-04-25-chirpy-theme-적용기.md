@@ -51,3 +51,11 @@ cannot load such file -- psych**
 —> bundle 성공...ㅎ
 - bash tools/init 재실행 이후 push 완료
 **—> 테마 적용 성공**
+
+
+
+
+---
+해당 블로그 구축에 도움받았던 분들의 글 링크
+https://www.irgroup.org/posts/jekyll-chirpy/
+https://velog.io/@hashnsalt/Github-Blog-%EB%A7%8C%EB%93%A4%EA%B8%B0-2
