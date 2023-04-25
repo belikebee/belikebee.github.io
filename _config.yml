@@ -18,7 +18,7 @@ timezone: Asia/Seoul
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: 꿀벌처럼 꿀빨기 # the main title
+title: 꿀벌처럼 부지런하게 꿀빨기 # the main title
 
 tagline: 개발, 책, 운동  # it will display as the sub-title
 
@@ -80,8 +80,7 @@ theme_mode: # [light|dark]
 img_cdn:
 
 # the avatar on sidebar, support local or CORS resources
-# avatar: "/assets/img/favicons/honeybee.png"
-avartar: ""
+avatar: "/assets/img/honeybee.png"
 
 # boolean type, the global switch for TOC in posts.
 toc: true

@@ -1,10 +1,14 @@
 ---
 title: github blog에 Chirpy theme 적용기
-author: belikebee
+author: blb
 date: 2023-04-25 22:00:00 +0900
 categories: [jekyll, github]
 tags: [blog]
 render_with_liquid: false
+math: true
+mermaid: true
+toc: true
+comments: true
 ---
 
 - 윈도우11에서 작업하다가 wsl 이슈가 계속 발생하여 mac으로 이동하여 작업진행함
