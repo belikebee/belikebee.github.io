@@ -4,5 +4,8 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-> Add Markdown syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
+
+> 정보보안 석사 졸업하고 인공지능 개발하는 개발자
 {: .prompt-tip }
+
+
