@@ -97,9 +97,11 @@ cannot load such file -- psych**
 	avatar: /assets/img/avatar.png
 
 	4. 웹이미지 URL 입력시 잘못입력하면 죽음 
-	
-	
 	# 이미지는 다운받아 경로를 입력하는게 안정적 보임
+
+	5. post의 title을 입력할때 []가 들어가도 죽음
+	
+	
 	```
       
 
