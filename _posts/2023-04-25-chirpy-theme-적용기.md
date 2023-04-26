@@ -95,9 +95,7 @@ cannot load such file -- psych**
 	# 시작은 무조건 / 로 시작할것
 	avatar: /assets/img/avatar.png
 
-	4. 웹이미지 URL 입력시 잘못입력하면 죽음
-	
-	![image](링크)
+	4. 웹이미지 URL 입력시 잘못입력하면 죽음 
 	
 	
 	# 이미지는 다운받아 경로를 입력하는게 안정적 보임
