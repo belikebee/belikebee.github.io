@@ -96,6 +96,7 @@ comments:
   utterances:
     repo: belikebee/belikebee.github.io # <gh-username>/<repo>
     issue_term: pathname # < url | pathname | title | ...>
+    theme: github-light
   # Giscus options › https://giscus.app
   giscus:
     repo: # <gh-username>/<repo>
