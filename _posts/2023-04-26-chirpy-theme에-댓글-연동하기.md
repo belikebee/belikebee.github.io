@@ -1,7 +1,7 @@
 ---
 title: chirpy theme에 댓글 연동하기
 author: blb
-date: 2023-04-26 22:00:00 +0900
+date: 2023-04-26 21:00:00 +0900
 categories: [jekyll, chirpy]
 tags: [blog]
 render_with_liquid: false
