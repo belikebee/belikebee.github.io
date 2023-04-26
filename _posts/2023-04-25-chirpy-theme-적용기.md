@@ -99,7 +99,10 @@ cannot load such file -- psych**
 	4. 웹이미지 URL 입력시 잘못입력하면 죽음 
 	# 이미지는 다운받아 경로를 입력하는게 안정적 보임
 
-	5. post의 title을 입력할때 []가 들어가도 죽음
+	5. post의 title을 입력할때 []을 잘못쓰면 죽음
+	title: "[CATEGORY] TITLE"
+	# [] yaml 문법과 겹쳐서 죽는 것 같음, 한칸씩 띄어주면 잘 동작하는것 확인
+	title: "[ CATEGORY ] TITLE"
 	
 	
 	```
