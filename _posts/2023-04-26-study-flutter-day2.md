@@ -1,5 +1,5 @@
 ---
-title: "[FLUTTER] dart 문법 익히기 day2"
+title: '[FLUTTER] dart 문법 익히기 day2'
 author: blb
 date: 2023-04-26 22:30:00 +0900
 categories: [flutter, dart]
