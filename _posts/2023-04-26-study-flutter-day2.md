@@ -3,7 +3,7 @@ title: [FLUTTER] dart 문법 익히기 day2
 author: blb
 date: 2023-04-26 22:30:00 +0900
 categories: [flutter, dart]
-tags: [flutter, 개발]
+tags: [flutter]
 render_with_liquid: false
 math: true
 mermaid: true
@@ -17,10 +17,9 @@ comments: true
   * MacBook Air M2(Ventura 13.0.1)
   * IDE : VS Code
 
-- Study 시작일 : 2023년 04월 25일
-- Goal : 5월까지 로또 번호 추천 앱 틀이라도 배포하기
-- 하루 10~30분 공부해서 올리기
-- 
+- 시작일 : 2023년 04월 25일
+- 목표 : 5월까지 로또 번호 추천 앱 틀이라도 배포하기
+- 계획 : 하루 10~30분 공부해서 올리기
 ---
 ## DART 기본 개념
 ### 비동기 관련 제한된 예약어

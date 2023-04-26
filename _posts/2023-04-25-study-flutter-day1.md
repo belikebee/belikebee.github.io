@@ -3,7 +3,7 @@ title: [FLUTTER] dart 문법 익히기 day1
 author: blb
 date: 2023-04-25 22:30:00 +0900
 categories: [flutter, dart]
-tags: [flutter, 개발]
+tags: [flutter]
 render_with_liquid: false
 math: true
 mermaid: true
