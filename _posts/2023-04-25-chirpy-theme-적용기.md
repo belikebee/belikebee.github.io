@@ -70,5 +70,9 @@ cannot load such file -- psych**
 
 ---
 해당 블로그 구축에 도움되었던 블로그들의 링크
+
+
 https://www.irgroup.org/posts/jekyll-chirpy/
+
+
 https://velog.io/@hashnsalt/Github-Blog-%EB%A7%8C%EB%93%A4%EA%B8%B0-2
