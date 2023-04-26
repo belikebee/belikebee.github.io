@@ -28,7 +28,7 @@ comments: true
 
   
 ## Theme 적용을 향한 끝없는 여정
-#### 1. theme 내 ruby 버전(.github/workflows/pages-deploy.yml.hook)과 mac에 설치된 버전이 다른것 확인 ruby 버전 3.0.2로 업데이트
+### 1. theme 내 ruby 버전(.github/workflows/pages-deploy.yml.hook)과 mac에 설치된 버전이 다른것 확인 ruby 버전 3.0.2로 업데이트
 - brew install rbenv ruby-build
 - rbenv install 3.0.2	
 - rbenv global 3.0.2
@@ -37,7 +37,7 @@ comments: true
 - source ~/.zshrc 로 적용
 
 
-#### 2. 버전 업데이트 후 jekyll serve에서 에러를 뱉길래 bundle 부터 입력했더니 아래와 같은 문구 출력
+### 2. 버전 업데이트 후 jekyll serve에서 에러를 뱉길래 bundle 부터 입력했더니 아래와 같은 문구 출력
 **An error occurred while installing eventmachine (1.2.7), and Bundler cannot continue.**
 - gem install ruby_dev 실행
 - Gemfile.lock 에 있는 bundler version설치
@@ -48,7 +48,7 @@ comments: true
 		- 위의 멘트와 다른 이슈가 나와서 되는 줄 알고 살짝 기대
 **—> 실패**
 
-#### 3.  ruby version 3.2.2 로 업데이트 진행
+### 3.  ruby version 3.2.2 로 업데이트 진행
 - 에러 발생
 **..../ruby-3.2.0/lib/yaml.rb:3: warning: It seems your ruby installation is missing psych (for YAML output).
 To eliminate this warning, please install libyaml and reinstall your ruby.
@@ -67,7 +67,7 @@ cannot load such file -- psych**
 
 
 
-**이후 중간중간 블로그 deploy가 실패하는 경우 발생 기록**
+### 이후 deploy가 실패하는 경우 기록
 - _config.yml 파일 수정 중 빈번하게 발생
 	```yaml
 	1. 줄바꿈은 띄어쓰기 2번이라는 걸 어디선가 보고 했는데 안되길래 띄어쓰기를 많이 넣었더니 왜 인지 명확하지 않지만 죽음
@@ -97,7 +97,8 @@ cannot load such file -- psych**
 
 	4. 웹이미지 URL 입력시 잘못입력하면 죽음
 	
-	![image](https://test.test.test)
+	![image](링크)
+	
 	
 	# 이미지는 다운받아 경로를 입력하는게 안정적 보임
 	```
@@ -108,8 +109,6 @@ cannot load such file -- psych**
 ---
 해당 블로그 구축에 도움되었던 블로그들의 링크
 
-
 https://www.irgroup.org/posts/jekyll-chirpy/
-
 
 https://velog.io/@hashnsalt/Github-Blog-%EB%A7%8C%EB%93%A4%EA%B8%B0-2
