@@ -5,8 +5,6 @@ date: 2023-04-26 22:30:00 +0900
 categories: [flutter, dart]
 tags: [flutter]
 render_with_liquid: false
-math: true
-mermaid: true
 toc: true
 comments: true
 ---

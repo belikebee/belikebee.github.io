@@ -5,8 +5,6 @@ date: 2023-04-26 21:00:00 +0900
 categories: [jekyll, chirpy]
 tags: [blog]
 render_with_liquid: false
-math: true
-mermaid: true
 toc: true
 comments: true
 ---
