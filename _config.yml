@@ -18,8 +18,7 @@ timezone: Asia/Seoul
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
 
-title: |-
-  꿀벌처럼 부지런하게  
+title: 꿀벌처럼 부지런하게  
   꿀빨기
 
 tagline: 개발, 책, 운동  # it will display as the sub-title
