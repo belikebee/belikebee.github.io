@@ -1,5 +1,5 @@
 ---
-title: github blog에 chirpy theme 적용기
+title: "[ BLOG ] github blog에 chirpy theme 적용기"
 author: blb
 date: 2023-04-25 22:00:00 +0900
 categories: [jekyll, chirpy]
