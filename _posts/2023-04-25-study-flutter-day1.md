@@ -93,7 +93,9 @@ void foo(); // 식별자 foo
 |Function|static|get|typedef|
 
 - 일반 변수명으로 사용될 만한 식별자들이 보임
+
 ```dart
+
 // prefix 불가
 import 'package:test/testFunction.dart' as set;
 

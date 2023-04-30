@@ -8,6 +8,7 @@ render_with_liquid: false
 toc: true
 comments: true
 ---
+
 ## FLUTTER로 앱 만들기 위한 DART 튜토리얼
 * 참고자료 : 모바일 앱 개발을 위한 다트&플러터(서준수 저)
 
@@ -18,7 +19,9 @@ comments: true
 - 시작일 : 2023년 04월 25일
 - 목표 : 5월까지 로또 번호 추천 앱 틀이라도 배포하기
 - 계획 : 하루 10~30분 공부해서 올리기
+
 ---
+
 ## DART 주석, 변수, 상수, 타입
 ### 주석 (comment)
 - 타언어와 비슷비슷
@@ -26,12 +29,12 @@ comments: true
 - /* 내용 */ : /*와 */ 사이의 모든 내용 주석
 
 ### 타입 (type)
-|타입 | 설명|
-|:-: | :-:|
-|num | int와 doubl의 suptertype |
-|int | 정수 |
-|double | 실수 |
-|string | 문자 |
+|타입|설명|
+|:---:|:---:|
+|num|int와 doubl의 suptertype|
+|int|정수|
+|double|실수|
+|string|문자|
 |bool | true or false 값을 가지는 boolean type |
 |var | type 미지정 및 type 변경 불가 |
 |dynamic | type 미지정 및 type 변경 가능 |
@@ -68,6 +71,7 @@ print('number is $number.'); // number is 10.
 - final과 const의 차이는 정의 시점의 차이
 const는 컴파일 시, final은 런타임 시
 따라서 const가 final보다 먼저 정의되며 컴파일 되기 전의 함수로 값을 불러오는 경우 에러 에러 발생
+
 ```dart
 final int PRICE = 1000;
 final NAME = 'BEE'; // 타입 생략 가능
