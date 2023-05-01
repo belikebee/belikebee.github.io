@@ -1,5 +1,4 @@
 ---
-title: "[ BLOG ] chirpy theme 적용기"
 author: blb
 date: 2023-04-25 22:00:00 +0900
 categories: [jekyll, chirpy]
@@ -101,8 +100,7 @@ cannot load such file -- psych**
 	title: "[CATEGORY] TITLE"
 	# [] yaml 문법과 겹쳐서 죽는 것 같음, 한칸씩 띄어주면 잘 동작하는것 확인
 	title: "[ CATEGORY ] TITLE"
-	
-	
+	# -> 띄어쓰기 없이 하려면 md 파일명으로 작성하고 파일 내에서 title 값을 삭제
 	```
       
 
