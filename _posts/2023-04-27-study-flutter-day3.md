@@ -29,18 +29,19 @@ comments: true
 - /* 내용 */ : /*와 */ 사이의 모든 내용 주석
 
 ### 타입 (type)
-|타입|설명|
-|:---:|:---:|
-|num|int와 doubl의 suptertype|
-|int|정수|
-|double|실수|
-|string|문자|
-|bool|true or false 값을 가지는 boolean type|
-|var|type 미지정 및 type 변경 불가|
-|dynamic|type 미지정 및 type 변경 가능|
-|list|dart의 array는 list로 대체|
-|set|순서가 없고 중복이 없는 collection|
-|map|key, value 형태를 가지는 collection(like python dictonary)|
+
+  |타입|설명|
+  |:---:|:---:|
+  |num|int와 doubl의 suptertype|
+  |int|정수|
+  |double|실수|
+  |string|문자|
+  |bool|true or false 값을 가지는 boolean type|
+  |var|type 미지정 및 type 변경 불가|
+  |dynamic|type 미지정 및 type 변경 가능|
+  |list|dart의 array는 list로 대체|
+  |set|순서가 없고 중복이 없는 collection|
+  |map|key, value 형태를 가지는 collection(like python dictonary)|
 
 ### 변수 (variable)
 - 문자열은 "", ''로 감싸면 문자열로 인식
