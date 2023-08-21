@@ -1,5 +1,6 @@
 ---
 author: blb
+title: "[BLOG]Chirpy Theme 적용기"
 date: 2023-04-25 22:00:00 +0900
 categories: [jekyll, chirpy]
 tags: [blog]

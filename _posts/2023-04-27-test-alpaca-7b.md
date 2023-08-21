@@ -1,5 +1,6 @@
 ---
 author: blb
+title: "[찍먹]Alpaca 7B"
 date: 2023-04-27 22:00:00 +0900
 categories: [AI, alpaca]
 tags: [AI]

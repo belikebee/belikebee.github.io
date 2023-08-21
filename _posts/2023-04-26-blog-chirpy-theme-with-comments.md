@@ -1,5 +1,6 @@
 ---
 author: blb
+title: "[BLOG]Chirpy Theme에 댓글 연동하기"
 date: 2023-04-26 21:00:00 +0900
 categories: [jekyll, chirpy]
 tags: [blog]
