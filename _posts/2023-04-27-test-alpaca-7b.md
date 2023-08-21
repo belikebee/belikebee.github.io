@@ -8,7 +8,8 @@ render_with_liquid: false
 toc: true
 comments: true
 ---
-## alpaca 7b
+## Alpaca 7B 찍먹
+![alpaca7b](/assets/img/20230821/alpaca.png)
 
 ### 0. 참고
   - 테스트 사양 : 맥북 m2 8기가 메모리
