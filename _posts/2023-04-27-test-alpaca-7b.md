@@ -7,9 +7,10 @@ tags: [AI]
 render_with_liquid: false
 toc: true
 comments: true
+img_path: /assets/img/20230821
 ---
 ## Alpaca 7B 찍먹
-![alpaca7b](/assets/img/20230821/alpaca.png)
+![alpaca7b](alpaca.png)
 
 ### 0. 참고
   - 테스트 사양 : 맥북 m2 8기가 메모리
