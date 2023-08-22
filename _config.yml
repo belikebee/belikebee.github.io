@@ -19,9 +19,9 @@ timezone: Asia/Seoul
 # ↓ --------------------------
 
 title: |-
-  꿀벌처럼  
+  """꿀벌처럼  
   부지런하게  
-  꿀빨기위함
+  꿀빨기위함"""
 
 tagline: 개발, 책, 운동  # it will display as the sub-title
 
