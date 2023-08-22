@@ -20,7 +20,7 @@ timezone: Asia/Seoul
 
 title: "꿀벌처럼<br/>부지런하게<br/>꿀빨기위함"
 
-tagline: 개발, 책, 운동  # it will display as the sub-title
+tagline: # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   파이썬, python, 인공지능, 앱, flutter, dart, ai, llm
