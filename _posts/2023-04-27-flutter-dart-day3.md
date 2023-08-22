@@ -1,6 +1,6 @@
 ---
 author: blb
-title:  "[FLUTTER]Dart 문법 익히기 Day3"
+title: "[FLUTTER]Dart 문법 익히기 Day3"
 date: 2023-04-27 22:30:00 +0900
 categories: [flutter, dart]
 tags: [flutter]
