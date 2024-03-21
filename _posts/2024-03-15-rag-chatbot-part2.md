@@ -20,7 +20,8 @@ comments: true
 - 활용 LLM : OpenAI API
 - Vector Store : MILVUS(chromadb, pinecone)
 
-- 데이터 형태 : Source로 사용될 문서는 1건의 csv 문서, 1건의 excel문서와 PDF 문서들
+- 데이터 종류 : EXCEL, CSV, PDF
+
 
 ----
 
