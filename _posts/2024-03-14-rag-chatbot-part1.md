@@ -2,8 +2,8 @@
 author: blb
 title: "[RAG] langchain활용 RAG 챗봇 구축기 part 1 /4"
 date: 2024-03-14 22:00:00 +0900
-categories: [AI, RAG, CHATBOT]
-tags: [AI]
+categories: [RAG, CHATBOT, OPENAI, LANGCHAIN, AI]
+tags: [RAG]
 render_with_liquid: false
 toc: true
 comments: true
@@ -66,7 +66,7 @@ vectorstore = Milvus(
 - csv 문서들은 row 단위로, pdf파일은 chunk_size 단위로 분리
 - vectorstore.add_documnets를 통한 collection에 embedding값 저장
 - 참고사항으로는 collection에 처음들어간 데이터의 metadata구조를 뒤에 추가는 데이터들도 따라야하는 구조
-- 모두 같은 형태의 데이터를 추가한다면 문제가 없겠지만 라이브러리들이 가져온 metadata는 데이터별로 차이가 있어서 따라서 어느 정도 metadata의 schema(?)를 구축하여 추가 필요
+- 모두 같은 형태의 데이터를 추가한다면 문제가 없겠지만 라이브러리들이 가져온 metadata는 데이터별로 차이가 있어서 어느 정도 metadata의 schema 구축 필요
 - 초기에는 기본적인 내용으로 metadata를 구축했으나 추후에 metadata를 활용하여 고도화를 시도하기에 전체 데이터 및 검색 기준에 활용될 수 있는 metadata를 구축하는 것이 좋을 것으로 판단 됨
   - 우선 일반적인 구축으로 작성하고 다음 편에서 추가 예정
 
@@ -91,6 +91,9 @@ for doc in excel_data:
   # PDF가 대부분이라 page정보가 추가될 예정이므로 excel의 row를 page로 할당
   # 크게 유의미하지 않은 데이터
   doc.metadata["page"] = f"{excel_row_num}"
+  # “임베딩에 사용될 컬럼명”의 데이터만 page_content로 추출
+  # 추가적인 설명으로 생성이 가능하도록 최종 문서 업데이트
+  doc.page_content = f”{doc.page_content} - {해당 content의 설명}”
 
 # insert된 결과를 확인하기 위한, results는 insert된 pk 값들이 list로 리턴된다.
 results = vectorstore.add_documnents(excel_data)
@@ -151,7 +154,7 @@ chain_type_kwargs = {"prompt": prompt}
 k = 10
 retriever = vectorstore.as_retriever(search_kwargs={"k": k})
 
-
+# model_name으로 "gpt-4-turbo-preview" 사용시 가장 최신 turbo 모델을 가져온다.
 llm = ChatOpenAI(model_name="gpt-4-turbo-preview", temperature=0)  
 chain = RetrievalQAWithSourcesChain.from_chain_type(
     llm=llm,
@@ -180,3 +183,4 @@ print(res['answer'])
 1) 프롬프트 업데이트
 2) 데이터 구조 업데이트
 3) 리트리버 업데이트
+
