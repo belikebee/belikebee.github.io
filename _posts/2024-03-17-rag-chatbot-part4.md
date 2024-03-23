@@ -10,24 +10,19 @@ comments: true
 
 ---
 
-
 ### 0.프로젝트 정의 및 개발 환경  
- 
 - 프로젝트 정의 : 1900년대 문서들부터 최신 문서까지 약 1,000건의 문서를 기반으로한 RAG 구축  
- 
 - 개발 환경 : Ubuntu  
- 
 - 활용 프레임워크 : Langchain  
 - 활용 LLM : OpenAI API  
 - Vector Store : MILVUS(chromadb, pinecone)  
- 
 - 데이터 형태 : Source로 사용될 문서는 1건의 csv 문서, 1건의 excel문서와 PDF 문서들  
  
 ----  
  
 ### 1. 문서 검색을 입맛대로 업데이트
-
 - 우선적으로 유사도 기반 결과 리턴을 위한 리트리버 정의
+
 ```python
 retriever = vectorstore.as_retriever(
     search_type="similarity_score_threshold",
@@ -42,18 +37,19 @@ docs = retriever.get_relevant_documents(f"{query}")
 - 따라서 threshold를 이용해서 문서를 검색하기 위해 chain을 상속받아 문서 검색 함수를 수정하기로 결정
 
 - chain을 수정하기 전에 문서 검색을 잘하기 위한 조건 선정
-1) EXCEL, CSV에서 우선 검색을 한다.
-2) 최신 순부터 검색한다.
-3) 기간에 대한 검색을 가능하게 한다.
-4) 검색된 문서의 유사도 스코어를 확인하여 일정 수준 이하의 제외한다.
-5) k 개보다 문서가 적은 경우 추가 검색을 진행한다.
-6) 일치하는 문서가 0개인 경우 fallback 메시지를 출력한다.
+  1) EXCEL, CSV에서 우선 검색을 한다.
+  2) 최신 순부터 검색한다.
+  3) 기간에 대한 검색을 가능하게 한다.
+  4) 검색된 문서의 유사도 스코어를 확인하여 일정 수준 이하의 제외한다.
+  5) k 개보다 문서가 적은 경우 추가 검색을 진행한다.
+  6) 일치하는 문서가 0개인 경우 fallback 메시지를 출력한다.
 
 - retriever가 아닌 vectorstore로 구축해야해서 "VectorDBQAWithSourcesChain"을 활용하려 했지만, 비동기를 지원하지않아 "RetrievalQAWithSourcesChain"을 상속받아 수정 진행
 
 ### 2. RetrievalQAWithSourcesChain 업데이트
 - 문서를 가져오는 부분과 결과를 생성하는 부분 업데이트 진행
 ** [RetrievalQAWithSourcesChain](https://github.com/langchain-ai/langchain/blob/master/libs/langchain/langchain/chains/qa_with_sources/retrieval.py) 참조
+
 ```python
 # 아래 함수들을 수정하기 위해 추가 import
 from langchain_core.callbacks import (
@@ -142,13 +138,14 @@ def _get_docs(
             result["source_documents"] = docs
         return result
 ```
+
 - 기본 함수를 통해 추론을 진행하다가 비동기 함수를 활용했을때 시간이 많이 단축되는 것을 확인하고 비동기 함수부분을 수정
 - 동기, 비동기 테스트 결과
   - 각 10개의 동일한 질문 입력  
   - 동기 방식 : 288.59 초  
   - 비동기 방식 : 73.40 초
-```python
 
+```python
 # 문서를 가져오는 비동기 function
 async def _get_docs(
     self, inputs: Dict[str, Any], *, run_manager: CallbackManagerForChainRun

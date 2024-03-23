@@ -11,17 +11,12 @@ comments: true
 ---
 
 ### 0.프로젝트 정의 및 개발 환경
-
 - 프로젝트 정의 : 1900년대 문서들부터 최신 문서까지 약 1,000건의 문서를 기반으로한 RAG 구축
-
 - 개발 환경 : Ubuntu
-
 - 활용 프레임워크 : Langchain
 - 활용 LLM : OpenAI API
 - Vector Store : MILVUS(chromadb, pinecone)
-
 - 데이터 종류 : EXCEL, CSV, PDF
-
 
 ----
 
