@@ -26,15 +26,15 @@ comments: true
 ----  
  
 ### 1. 검색 고도화 방안 탐색 - 데이터 구조 업데이트  
--  
+
 - 빠르게 구축만 진행하고 RAG 구조에 대해 이해 미흡으로 좀 더 이해하고 잘할 수 있는 방법을 탐색  
 - RAG 구조  
-1. Chain에 질문 입력 시 질문을 Embedding하여 Vector Store에 검색한다.  
-2. 질문과 유사한 Embedding을 가지는 문서를 k개 추출한다.  
-3. 추출된 문서 k개를 요약한 후 prompt와 합쳐 llm에 전달한다.  
-4. llm에서 생성된 결과를 출력한다.  
+  1. Chain에 질문 입력 시 질문을 Embedding하여 Vector Store에 검색한다.  
+  2. 질문과 유사한 Embedding을 가지는 문서를 k개 추출한다.  
+  3. 추출된 문서 k개를 요약한 후 prompt와 합쳐 llm에 전달한다.  
+  4. llm에서 생성된 결과를 출력한다.  
  
-[langchain - RAG 이미지 입력]  
+![langchain - RAG](https://python.langchain.com/assets/images/rag_retrieval_generation-1046a4668d6bb08786ef73c56d4f228a.png)
  
 - 따라서 좋은 응답을 만들기 위해서는 좋은 문서를 추출하는 것이 필요
 - 좋은 문서는 사용자가 입력한 질문의 답이 포함된 문서라고 정의 할 수 있음

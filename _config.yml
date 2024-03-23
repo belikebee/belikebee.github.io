@@ -13,7 +13,7 @@ baseurl: ""
 lang: ko
 
 # Change to your timezone › http://www.timezoneconverter.com/cgi-bin/findzone/findzone
-timezone: Asia/Seoul 
+timezone: Asia/Seoul
 
 # jekyll-seo-tag settings › https://github.com/jekyll/jekyll-seo-tag/blob/master/docs/usage.md
 # ↓ --------------------------
@@ -24,7 +24,7 @@ tagline: "꿀벌처럼<br/>부지런하게<br/>꿀빨기위함" # it will displa
 
 description: >- # used by seo meta and the atom feed
   파이썬, python, 인공지능, 앱, flutter, dart, ai, llm
-  
+
 # fill in the protocol & hostname for your site, e.g., 'https://username.github.io'
 url: "https://belikebee.github.io"
 
@@ -53,7 +53,7 @@ google_site_verification:  # fill in to your verification string
 # The end of `jekyll-seo-tag` settings
 
 google_analytics:
-  id: G-3N0DC2K1YJ
+  id: G-FWNETMJ6YZ
   # fill in your Google Analytics ID
   # Google Analytics pageviews report settings
   pv:
