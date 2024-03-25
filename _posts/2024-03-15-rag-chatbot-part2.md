@@ -2,7 +2,7 @@
 author: blb
 title: "[RAG] langchain활용 RAG 챗봇 구축기 part 2 /4"
 date: 2024-03-15 22:00:00 +0900
-categories: [RAG, CHATBOT, OPENAI, LANGCHAIN, AI]
+categories: [RAG, LANGCHAIN]
 tags: [RAG]
 render_with_liquid: false
 toc: true
@@ -10,15 +10,16 @@ comments: true
 
 ---
 
-### 0.프로젝트 정의 및 개발 환경
-- 프로젝트 정의 : 1900년대 문서들부터 최신 문서까지 약 1,000건의 문서를 기반으로한 RAG 구축
-- 개발 환경 : Ubuntu
-- 활용 프레임워크 : Langchain
-- 활용 LLM : OpenAI API
-- Vector Store : MILVUS(chromadb, pinecone)
-- 데이터 종류 : EXCEL, CSV, PDF
 
-----
+### 0.프로젝트 정의 및 개발 환경  
+- 프로젝트 정의 : 1900년대 문서들부터 최신 문서까지 약 1,000건의 문서를 기반으로한 RAG 구축  
+- 개발 환경 : Ubuntu  
+- 활용 프레임워크 : Langchain  
+- 활용 LLM : OpenAI API  
+- Vector Store : MILVUS(chromadb, pinecone)  
+- 데이터 형태 : Source로 사용될 문서는 1건의 csv 문서, 1건의 excel문서와 PDF 문서들  
+ 
+----  
 
 ### 1. 1차 프롬프트 업데이트
 - RAG 관련 프롬프팅을 많이 찾아봤지만 일반적인 것들만 나오고 타겟 서비스에 적합한 것들은 직접 구축해야하는 것으로 확인

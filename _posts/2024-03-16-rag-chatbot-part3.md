@@ -2,7 +2,7 @@
 author: blb
 title: "[RAG] langchain활용 RAG 챗봇 구축기 part 3 /4"
 date: 2024-03-16 22:00:00 +0900
-categories: [RAG, CHATBOT, OPENAI, LANGCHAIN, AI]
+categories: [RAG, LANGCHAIN]
 tags: [RAG]
 render_with_liquid: false
 toc: true
